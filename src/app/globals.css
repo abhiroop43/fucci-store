@@ -1,26 +1,649 @@
 @import "tailwindcss";
 
+/*
+ * Fucci design system.
+ *
+ * Principles: a monochrome canvas so photography carries the colour; one
+ * neutral grotesk set small and quiet, with uppercase tracked labels doing the
+ * work of hierarchy; square corners and 1px hairlines instead of shadows;
+ * generous, fluid whitespace that scales with the viewport rather than jumping
+ * at breakpoints. The storefront is light-only on purpose — packshots are shot
+ * on pale grounds and a dark theme would fight them.
+ */
+
+/* Runtime values that change per breakpoint; @theme inline below reads them. */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --header-height: 3.5rem;
+    color-scheme: light;
+}
+
+@media (width >= 64rem) {
+    :root {
+        --header-height: 4.5rem;
+    }
+}
+
+@theme {
+    /* ── Colour ─────────────────────────────────────────────── */
+    --color-*: initial;
+    --color-transparent: transparent;
+    --color-current: currentColor;
+    --color-white: #ffffff;
+    --color-black: #000000;
+
+    --color-ink: #000000; /* primary text, primary buttons, strong rules */
+    --color-ink-soft: #555555; /* secondary text — 7.4:1 on paper */
+    --color-ink-muted: #767676; /* tertiary text, captions — 4.5:1 on paper */
+    --color-ink-hover: #2b2b2b; /* hover state of ink-filled controls */
+    --color-paper: #ffffff; /* page background, text on imagery */
+    --color-surface: #f5f5f5; /* product image grounds, inset panels */
+    --color-surface-strong: #ebebeb; /* hover/pressed surfaces, skeletons */
+    --color-line: #e3e3e3; /* hairline dividers and field borders */
+    --color-line-strong: #000000; /* focused fields, outlined buttons */
+    --color-scrim: rgb(0 0 0 / 0.35); /* overlays behind drawers, text on photos */
+    --color-accent: #6e1f24; /* used sparingly: sale prices, promo badges */
+    --color-danger: #b3261e;
+    --color-success: #1e6b3c;
+
+    /* ── Typography ─────────────────────────────────────────── */
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+
+    --tracking-display: -0.02em;
+    --tracking-tight: -0.01em;
+    --tracking-normal: 0;
+    --tracking-label: 0.08em; /* uppercase UI text */
+    --tracking-wide: 0.16em; /* sparse uppercase: hero eyebrows, footer heads */
+    /* UI scale: body copy sits at 14px — fashion UI reads small and calm. */
+    --text-2xs: 0.6875rem; /* 11px — badges, legal */
+    --text-2xs--line-height: 1rem;
+    --text-xs: 0.75rem; /* 12px — labels, buttons, nav */
+    --text-xs--line-height: 1.125rem;
+    --text-sm: 0.875rem; /* 14px — body, product names, prices */
+    --text-sm--line-height: 1.375rem;
+    --text-base: 1rem; /* 16px — long-form prose, inputs (stops iOS zoom) */
+    --text-base--line-height: 1.625rem;
+    --text-lg: 1.125rem;
+    --text-lg--line-height: 1.625rem;
+
+    /* Editorial scale: fluid between 360px and 1440px viewports. */
+    --text-title: clamp(1.125rem, 1rem + 0.5vw, 1.5rem);
+    --text-title--line-height: 1.25;
+    --text-title--letter-spacing: var(--tracking-tight);
+    --text-headline: clamp(1.75rem, 1.25rem + 2vw, 3rem);
+    --text-headline--line-height: 1.1;
+    --text-headline--letter-spacing: var(--tracking-display);
+    --text-headline--font-weight: var(--font-weight-medium);
+    --text-display: clamp(2.5rem, 1.25rem + 5.5vw, 6.5rem);
+    --text-display--line-height: 0.95;
+    --text-display--letter-spacing: var(--tracking-display);
+    --text-display--font-weight: var(--font-weight-medium); /* Bodoni hairlines need the weight over photos */
+    /* ── Containers (max-w-*) ───────────────────────────────── */
+    --container-narrow: 26rem; /* auth and single-column forms */
+    --container-prose: 40rem; /* readable text measure */
+    --container-content: 80rem; /* PDP, bag, checkout */
+    --container-page: 120rem; /* listing grids; full-bleed media ignores it */
+    /* ── Aspect ratios (aspect-*) ───────────────────────────── */
+    --aspect-product: 3 / 4;
+    --aspect-square: 1 / 1;
+    --aspect-portrait: 4 / 5;
+    --aspect-landscape: 3 / 2;
+    --aspect-hero: 16 / 9;
+
+    /* ── Motion ─────────────────────────────────────────────── */
+    --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+    --default-transition-duration: 200ms;
+    --default-transition-timing-function: var(--ease-standard);
+
+    /* ── Breakpoints: Tailwind defaults plus one for very wide screens. ── */
+    --breakpoint-3xl: 120rem;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+    /* Bodoni Moda: display only (hero, editorial headlines, wordmark). */
+    --font-display: var(--font-bodoni), ui-serif, Georgia, serif;
+
+    /* Fluid spacing tokens: p-gutter, gap-grid, py-section, h-header, … */
+    --spacing-gutter: clamp(1rem, 0.5rem + 2.25vw, 2.5rem); /* page edge */
+    --spacing-grid: clamp(0.25rem, 0.1rem + 0.6vw, 0.75rem); /* between tiles */
+    --spacing-section: clamp(3rem, 1.75rem + 5.5vw, 7.5rem); /* between bands */
+    --spacing-header: var(--header-height);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ── Base ─────────────────────────────────────────────────── */
+@layer base {
+    /* Tailwind v4 defaults borders to currentColor; hairlines are the norm here. */
+    *,
+    ::before,
+    ::after {
+        border-color: var(--color-line);
+    }
+
+    html {
+        -webkit-text-size-adjust: 100%;
+        text-rendering: optimizeLegibility;
+        scroll-padding-top: var(--header-height);
+    }
+
+    body {
+        background-color: var(--color-paper);
+        color: var(--color-ink);
+        font-family: var(--font-sans);
+        font-size: var(--text-sm);
+        line-height: var(--text-sm--line-height);
+        font-weight: var(--font-weight-normal);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-weight: var(--font-weight-normal);
+        text-wrap: balance;
+    }
+
+    p {
+        text-wrap: pretty;
+    }
+
+    a {
+        text-underline-offset: 0.25em;
+        text-decoration-thickness: 1px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: var(--text-base); /* never below 16px, or iOS zooms on focus */
+    }
+
+    /* currentColor keeps the ring visible on the ink footer and over photos. */
+    :focus-visible {
+        outline: 1px solid currentColor;
+        outline-offset: 3px;
+    }
+
+    ::selection {
+        background-color: var(--color-ink);
+        color: var(--color-paper);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        *,
+        ::before,
+        ::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+        }
+    }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ── Components ───────────────────────────────────────────────
+ * Multi-property primitives live in the components layer so that any
+ * Tailwind utility on the same element wins (e.g. `btn btn-primary w-auto`),
+ * and so modifiers like `btn-sm` override `btn` by source order alone.
+ */
+@layer components {
+    /* Layout: containers */
+    .container-page,
+    .container-content,
+    .container-prose,
+    .container-narrow {
+        width: 100%;
+        margin-inline: auto;
+        padding-inline: var(--spacing-gutter);
+    }
+
+    .container-page {
+        max-width: var(--container-page);
+    }
+
+    .container-content {
+        max-width: calc(var(--container-content) + 2 * var(--spacing-gutter));
+    }
+
+    .container-prose {
+        max-width: calc(var(--container-prose) + 2 * var(--spacing-gutter));
+    }
+
+    .container-narrow {
+        max-width: calc(var(--container-narrow) + 2 * var(--spacing-gutter));
+    }
+
+    /* Layout: vertical rhythm between page bands */
+    .section {
+        padding-block: var(--spacing-section);
+    }
+
+    .section-tight {
+        padding-block: calc(var(--spacing-section) / 2);
+    }
+
+    /* Layout: sticky header with a centred mark and balanced side slots */
+    .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 40;
+        height: var(--header-height);
+        background-color: rgb(255 255 255 / 0.96);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--color-line);
+    }
+
+    .header-grid {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        height: 100%;
+        gap: 1rem;
+    }
+
+    .header-grid > :last-child {
+        justify-self: end;
+    }
+
+    /* Layout: full-bleed hero, copy anchored bottom-centre over a soft scrim */
+    .hero {
+        position: relative;
+        display: grid;
+        min-height: calc(100svh - var(--header-height));
+        overflow: hidden;
+        isolation: isolate;
+        color: var(--color-paper);
+    }
+
+    .hero > img,
+    .hero > picture,
+    .hero > video {
+        position: absolute;
+        inset: 0;
+        z-index: -2;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        /* Deep at the foot where the title sits, clear by two-thirds up. */
+        background: linear-gradient(
+                to top,
+                rgb(0 0 0 / 0.6),
+                rgb(0 0 0 / 0.25) 40%,
+                transparent 65%
+        );
+    }
+
+    .hero-content {
+        align-self: end;
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+        padding: var(--spacing-gutter);
+        padding-bottom: calc(var(--spacing-section) * 0.75);
+        text-align: center;
+    }
+
+    /* Layout: product grid — 2 up on phones, 3 on tablets, 4 on desktop */
+    .grid-products {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: var(--spacing-grid);
+        row-gap: clamp(2rem, 1.5rem + 2vw, 3.5rem);
+    }
+
+    @media (width >= 48rem) {
+        .grid-products {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+    }
+    @media (width >= 80rem) {
+        .grid-products {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+    }
+
+    /* Layout: editorial split — stacked on mobile, halves from md */
+    .split {
+        display: grid;
+        gap: var(--spacing-grid);
+    }
+
+    @media (width >= 48rem) {
+        .split {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    /* Layout: horizontal scroll-snap rail that bleeds off the right edge */
+    .rail {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 72%;
+        gap: var(--spacing-grid);
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x mandatory;
+        scroll-padding-inline: var(--spacing-gutter);
+        padding-inline: var(--spacing-gutter);
+        scrollbar-width: none;
+    }
+
+    .rail::-webkit-scrollbar {
+        display: none;
+    }
+
+    .rail > * {
+        scroll-snap-align: start;
+    }
+
+    @media (width >= 48rem) {
+        .rail {
+            grid-auto-columns: 38%;
+        }
+    }
+    @media (width >= 80rem) {
+        .rail {
+            grid-auto-columns: 22%;
+        }
+    }
+
+    /* Product tile: packshot on a pale ground, quiet two-line meta below */
+    .product-media {
+        position: relative;
+        aspect-ratio: var(--aspect-product);
+        overflow: hidden;
+        background-color: var(--color-surface);
+    }
+
+    .product-media > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 600ms var(--ease-standard);
+    }
+
+    @media (hover: hover) {
+        .group:hover .product-media > img {
+            transform: scale(1.03);
+        }
+    }
+    .product-meta {
+        display: flex;
+        flex-direction: column;
+        gap: 0.125rem;
+        padding-top: 0.875rem;
+        padding-inline: 0.25rem;
+    }
+
+    /* Type */
+    .eyebrow {
+        font-size: var(--text-2xs);
+        line-height: var(--text-2xs--line-height);
+        font-weight: var(--font-weight-medium);
+        letter-spacing: var(--tracking-wide);
+        text-transform: uppercase;
+    }
+
+    .label {
+        font-size: var(--text-xs);
+        line-height: var(--text-xs--line-height);
+        font-weight: var(--font-weight-medium);
+        letter-spacing: var(--tracking-label);
+        text-transform: uppercase;
+    }
+
+    .prose-body {
+        max-width: var(--container-prose);
+        font-size: var(--text-base);
+        line-height: var(--text-base--line-height);
+        color: var(--color-ink-soft);
+    }
+
+    .price {
+        font-variant-numeric: tabular-nums;
+    }
+
+    .price-compare {
+        font-variant-numeric: tabular-nums;
+        color: var(--color-ink-muted);
+        text-decoration: line-through;
+    }
+
+    .price-sale {
+        font-variant-numeric: tabular-nums;
+        color: var(--color-accent);
+    }
+
+    /* Buttons: square, uppercase, 48px tall — a 44px+ touch target everywhere */
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        min-height: 3rem;
+        padding-inline: 2rem;
+        border: 1px solid transparent;
+        border-radius: 0;
+        font-size: var(--text-xs);
+        line-height: 1;
+        font-weight: var(--font-weight-medium);
+        letter-spacing: var(--tracking-label);
+        text-transform: uppercase;
+        white-space: nowrap;
+        cursor: pointer;
+        user-select: none;
+        transition-property: color, background-color, border-color, opacity;
+        transition-duration: var(--default-transition-duration);
+        transition-timing-function: var(--ease-standard);
+    }
+
+    .btn:disabled,
+    .btn[aria-disabled="true"] {
+        opacity: 0.4;
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+
+    .btn-primary {
+        background-color: var(--color-ink);
+        border-color: var(--color-ink);
+        color: var(--color-paper);
+    }
+
+    .btn-primary:hover {
+        background-color: var(--color-ink-hover);
+        border-color: var(--color-ink-hover);
+    }
+
+    .btn-secondary {
+        background-color: transparent;
+        border-color: var(--color-line-strong);
+        color: var(--color-ink);
+    }
+
+    .btn-secondary:hover {
+        background-color: var(--color-ink);
+        color: var(--color-paper);
+    }
+
+    /* For use over photography */
+    .btn-inverse {
+        background-color: transparent;
+        border-color: var(--color-paper);
+        color: var(--color-paper);
+    }
+
+    .btn-inverse:hover {
+        background-color: var(--color-paper);
+        color: var(--color-ink);
+    }
+
+    .btn-sm {
+        min-height: 2.5rem;
+        padding-inline: 1.25rem;
+    }
+
+    .btn-block {
+        width: 100%;
+    }
+
+    .btn-icon {
+        min-height: 2.75rem;
+        min-width: 2.75rem;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        color: inherit;
+    }
+
+    /* Links */
+    .link {
+        text-decoration-line: underline;
+        text-decoration-color: currentColor;
+        transition: text-decoration-color var(--default-transition-duration);
+    }
+
+    .link:hover {
+        text-decoration-color: transparent;
+    }
+
+    /* Nav and footer: no rule until hover, so lists stay calm */
+    .link-quiet {
+        text-decoration-line: underline;
+        text-decoration-color: transparent;
+        transition: text-decoration-color var(--default-transition-duration);
+    }
+
+    .link-quiet:hover,
+    .link-quiet[aria-current="page"] {
+        text-decoration-color: currentColor;
+    }
+
+    /* Editorial call to action: uppercase text with a rule that retracts on hover */
+    .link-cta {
+        display: inline-block;
+        padding-bottom: 0.25rem;
+        font-size: var(--text-xs);
+        line-height: var(--text-xs--line-height);
+        font-weight: var(--font-weight-medium);
+        letter-spacing: var(--tracking-label);
+        text-transform: uppercase;
+        text-decoration: none;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-repeat: no-repeat;
+        background-position: 0 100%;
+        background-size: 100% 1px;
+        transition: background-size 300ms var(--ease-standard);
+    }
+
+    .link-cta:hover {
+        background-position: 100% 100%;
+        background-size: 0 1px;
+    }
+
+    /* Form field: underline-only, matching the hairline language */
+    .field {
+        display: block;
+        width: 100%;
+        min-height: 3rem;
+        padding-inline: 0;
+        border: 0;
+        border-bottom: 1px solid var(--color-line);
+        border-radius: 0;
+        background: transparent;
+        color: var(--color-ink);
+        transition: border-color var(--default-transition-duration);
+    }
+
+    .field::placeholder {
+        color: var(--color-ink-muted);
+    }
+
+    .field:focus {
+        outline: none;
+        border-bottom-color: var(--color-line-strong);
+    }
+
+    .field[aria-invalid="true"] {
+        border-bottom-color: var(--color-danger);
+    }
+
+    /* Mobile navigation drawer: a native <dialog> pinned to the left edge */
+    .mobile-menu {
+        position: fixed;
+        inset: 0 auto 0 0;
+        width: min(100%, 26rem);
+        max-width: none;
+        height: 100dvh;
+        max-height: none;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        overflow-y: auto;
+        background-color: var(--color-paper);
+        color: var(--color-ink);
+    }
+
+    .mobile-menu[open] {
+        animation: drawer-in 300ms var(--ease-standard);
+    }
+
+    .mobile-menu::backdrop {
+        background-color: var(--color-scrim);
+    }
+
+    html:has(.mobile-menu[open]) {
+        overflow: hidden;
+    }
+
+    /* Badge: tiny uppercase tag on product media */
+    .badge {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.25rem 0.5rem;
+        background-color: var(--color-paper);
+        font-size: var(--text-2xs);
+        line-height: 1;
+        letter-spacing: var(--tracking-label);
+        text-transform: uppercase;
+    }
+}
+
+@keyframes drawer-in {
+    from {
+        transform: translateX(-100%);
+    }
+}
+
+/* ── Single-purpose utilities (variant-aware: md:hairline-t, etc.) ── */
+@utility hairline-t {
+    border-top: 1px solid var(--color-line);
+}
+@utility hairline-b {
+    border-bottom: 1px solid var(--color-line);
+}
+@utility rule {
+    height: 1px;
+    width: 100%;
+    border: 0;
+    background-color: var(--color-line);
+}
+@utility no-scrollbar {
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
