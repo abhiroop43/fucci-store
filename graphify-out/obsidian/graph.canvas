@@ -1,0 +1,2519 @@
+{
+  "nodes": [
+    {
+      "id": "g0",
+      "type": "group",
+      "label": "Bag, Money & Data Rules",
+      "x": 0,
+      "y": 0,
+      "width": 1100,
+      "height": 620,
+      "color": "1"
+    },
+    {
+      "id": "n_agents_agents_md",
+      "type": "file",
+      "file": "AGENTS.md (Claude Code guidance).md",
+      "x": 20,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_better_auth_secret",
+      "type": "file",
+      "file": "BETTER_AUTH_SECRET.md",
+      "x": 220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_database_url",
+      "type": "file",
+      "file": "DATABASE_URL (pooled Neon string).md",
+      "x": 420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_db_backed_bag",
+      "type": "file",
+      "file": "DB-backed signed-in-only bag (carts unique user_id).md",
+      "x": 620,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_data_layer_neon_http",
+      "type": "file",
+      "file": "Data layer Drizzle over Neon HTTP driver.md",
+      "x": 820,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_env_config",
+      "type": "file",
+      "file": "Environment variables (.env).md",
+      "x": 20,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_inline_with_blocks",
+      "type": "file",
+      "file": "Inline Drizzle relational 'with' blocks.md",
+      "x": 220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_money_integer_cents",
+      "type": "file",
+      "file": "Money is integer cents.md",
+      "x": 420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_nextjs_16_app_router",
+      "type": "file",
+      "file": "Next.js 16 App Router + React 19.md",
+      "x": 620,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_nextjs16_async_params",
+      "type": "file",
+      "file": "Next.js 16 async paramssearchParams and PagePropsLayoutProps.md",
+      "x": 820,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_header_bag_count_omitted",
+      "type": "file",
+      "file": "No bag count on catalogue routes' SiteHeader.md",
+      "x": 20,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_dynamic_payment_methods",
+      "type": "file",
+      "file": "Omit payment_method_types for dynamic payment methods.md",
+      "x": 220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_static_catalogue_routes",
+      "type": "file",
+      "file": "Static catalogue routes (revalidate 300, generateStaticParams).md",
+      "x": 420,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_stripe_hosted_checkout",
+      "type": "file",
+      "file": "Stripe-hosted checkout via startCheckout (srclibcheckout.ts).md",
+      "x": 620,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_tailwind_v4",
+      "type": "file",
+      "file": "Tailwind v4 (PostCSS only, theme in globals.css).md",
+      "x": 820,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_cart_items_no_price",
+      "type": "file",
+      "file": "cart_items stores no price.md",
+      "x": 20,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_money_formatting",
+      "type": "file",
+      "file": "currency (catalogue-only) vs formatCents.md",
+      "x": 220,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_mapproduct",
+      "type": "file",
+      "file": "mapProduct() in srclibproducts.ts.md",
+      "x": 420,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_price_data_not_price_objects",
+      "type": "file",
+      "file": "price_data instead of Stripe Price objects.md",
+      "x": 620,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_cart_types",
+      "type": "file",
+      "file": "srclibcart-types.ts shared shapes.md",
+      "x": 820,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_cart_module",
+      "type": "file",
+      "file": "srclibcart.ts cart db owner.md",
+      "x": 20,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_products_query_layer",
+      "type": "file",
+      "file": "srclibproducts.ts query functions (Product type).md",
+      "x": 220,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_sample_data_static_chrome",
+      "type": "file",
+      "file": "srclibsample-data.ts static chrome only.md",
+      "x": 420,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_stripe_lazy_validation",
+      "type": "file",
+      "file": "srclibstripe.ts validates env on first use.md",
+      "x": 620,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g1",
+      "type": "group",
+      "label": "Package & Lint Config",
+      "x": 1180,
+      "y": 0,
+      "width": 1100,
+      "height": 520,
+      "color": "2"
+    },
+    {
+      "id": "n_ref_tailwindcss_turbopack",
+      "type": "file",
+      "file": "@tailwindcssturbopack.md",
+      "x": 1200,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_types_node",
+      "type": "file",
+      "file": "@typesnode.md",
+      "x": 1400,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_types_react",
+      "type": "file",
+      "file": "@typesreact.md",
+      "x": 1600,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_types_react_dom",
+      "type": "file",
+      "file": "@typesreact-dom.md",
+      "x": 1800,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_auth",
+      "type": "file",
+      "file": "auth.md",
+      "x": 2000,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_dotenv",
+      "type": "file",
+      "file": "dotenv.md",
+      "x": 1200,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_drizzle_kit",
+      "type": "file",
+      "file": "drizzle-kit.md",
+      "x": 1400,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_drizzle_config",
+      "type": "file",
+      "file": "drizzle.config.ts.md",
+      "x": 1600,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_eslint",
+      "type": "file",
+      "file": "eslint.md",
+      "x": 1800,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_eslint_config_next",
+      "type": "file",
+      "file": "eslint-config-next.md",
+      "x": 2000,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_eslint_config",
+      "type": "file",
+      "file": "eslint.config.mjs.md",
+      "x": 1200,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_eslint_config_eslintconfig",
+      "type": "file",
+      "file": "eslintConfig.md",
+      "x": 1400,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_name",
+      "type": "file",
+      "file": "name.md",
+      "x": 1600,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package",
+      "type": "file",
+      "file": "package.json.md",
+      "x": 1800,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_private",
+      "type": "file",
+      "file": "private.md",
+      "x": 2000,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_react",
+      "type": "file",
+      "file": "react.md",
+      "x": 1200,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_react_dom",
+      "type": "file",
+      "file": "react-dom.md",
+      "x": 1400,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_tailwindcss",
+      "type": "file",
+      "file": "tailwindcss.md",
+      "x": 1600,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_typescript",
+      "type": "file",
+      "file": "typescript.md",
+      "x": 1800,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_version",
+      "type": "file",
+      "file": "version.md",
+      "x": 2000,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "label": "Auth & Catalogue Schema",
+      "x": 2360,
+      "y": 0,
+      "width": 1100,
+      "height": 520,
+      "color": "3"
+    },
+    {
+      "id": "n_agents_auth_catchall_route",
+      "type": "file",
+      "file": "Auth catch-all route srcappapiauth...allroute.ts.md",
+      "x": 2380,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_auth_client",
+      "type": "file",
+      "file": "Better Auth React client srclibauth-client.ts.md",
+      "x": 2580,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_better_auth_server",
+      "type": "file",
+      "file": "Better Auth server instance srclibauth.ts.md",
+      "x": 2780,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_better_auth_tables",
+      "type": "file",
+      "file": "Better Auth tables (user, session, account, verification).md",
+      "x": 2980,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_catalogue_tables",
+      "type": "file",
+      "file": "Catalogue tables (categories, products, product_images).md",
+      "x": 3180,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_fucci_store",
+      "type": "file",
+      "file": "Fucci Store.md",
+      "x": 2380,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_collections_strip",
+      "type": "file",
+      "file": "Homepage Collections strip from categories with imageUrl.md",
+      "x": 2580,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_homepage_order_createdat",
+      "type": "file",
+      "file": "Homepage order by products.createdAt desc.md",
+      "x": 2780,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_tech_stack",
+      "type": "file",
+      "file": "Next.js + TypeScript + Tailwind + Better Auth + Drizzle + Neon.md",
+      "x": 2980,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_layout",
+      "type": "file",
+      "file": "Project layout.md",
+      "x": 3180,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_setup_steps",
+      "type": "file",
+      "file": "Setup steps.md",
+      "x": 2380,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_schema_single_file",
+      "type": "file",
+      "file": "Single schema file srcdbschema.ts.md",
+      "x": 2580,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_migrations_drizzle",
+      "type": "file",
+      "file": "Versioned SQL migrations under drizzle.md",
+      "x": 2780,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_auth_generate",
+      "type": "file",
+      "file": "authgenerate script (srcdbauth-schema.ts).md",
+      "x": 2980,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_drizzle_config",
+      "type": "file",
+      "file": "drizzle.config.ts drizzle-kit config.md",
+      "x": 3180,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_npm_scripts",
+      "type": "file",
+      "file": "npm scripts (devbuildlintdb).md",
+      "x": 2380,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_product_image_alt_per_row",
+      "type": "file",
+      "file": "product_images.alt belongs to the row.md",
+      "x": 2580,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_seed_script",
+      "type": "file",
+      "file": "scriptsseed.ts idempotent seed.md",
+      "x": 2780,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_slug_public_identifier",
+      "type": "file",
+      "file": "slug as public identifier.md",
+      "x": 2980,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "label": "TypeScript Config",
+      "x": 3540,
+      "y": 0,
+      "width": 1100,
+      "height": 520,
+      "color": "4"
+    },
+    {
+      "id": "n_tsconfig_compileroptions_allowjs",
+      "type": "file",
+      "file": "allowJs.md",
+      "x": 3560,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions",
+      "type": "file",
+      "file": "compilerOptions.md",
+      "x": 3760,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_esmoduleinterop",
+      "type": "file",
+      "file": "esModuleInterop.md",
+      "x": 3960,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_exclude",
+      "type": "file",
+      "file": "exclude.md",
+      "x": 4160,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_include",
+      "type": "file",
+      "file": "include.md",
+      "x": 4360,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_incremental",
+      "type": "file",
+      "file": "incremental.md",
+      "x": 3560,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_isolatedmodules",
+      "type": "file",
+      "file": "isolatedModules.md",
+      "x": 3760,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_jsx",
+      "type": "file",
+      "file": "jsx.md",
+      "x": 3960,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_lib",
+      "type": "file",
+      "file": "lib.md",
+      "x": 4160,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_module",
+      "type": "file",
+      "file": "module.md",
+      "x": 4360,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_moduleresolution",
+      "type": "file",
+      "file": "moduleResolution.md",
+      "x": 3560,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_noemit",
+      "type": "file",
+      "file": "noEmit.md",
+      "x": 3760,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_paths",
+      "type": "file",
+      "file": "paths.md",
+      "x": 3960,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_plugins",
+      "type": "file",
+      "file": "plugins.md",
+      "x": 4160,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_resolvejsonmodule",
+      "type": "file",
+      "file": "resolveJsonModule.md",
+      "x": 4360,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_skiplibcheck",
+      "type": "file",
+      "file": "skipLibCheck.md",
+      "x": 3560,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_strict",
+      "type": "file",
+      "file": "strict.md",
+      "x": 3760,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_target",
+      "type": "file",
+      "file": "target.md",
+      "x": 3960,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig",
+      "type": "file",
+      "file": "tsconfig.json.md",
+      "x": 4160,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g4",
+      "type": "group",
+      "label": "Auth & DB Runtime Code",
+      "x": 0,
+      "y": 700,
+      "width": 880,
+      "height": 520,
+      "color": "5"
+    },
+    {
+      "id": "n_ref_neondatabase_serverless",
+      "type": "file",
+      "file": "@neondatabaseserverless.md",
+      "x": 20,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_api_auth_all_route_get",
+      "type": "file",
+      "file": "GET.md",
+      "x": 220,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_api_auth_all_route_post",
+      "type": "file",
+      "file": "POST.md",
+      "x": 420,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_lib_auth_auth",
+      "type": "file",
+      "file": "auth_1.md",
+      "x": 620,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_lib_auth_client",
+      "type": "file",
+      "file": "auth-client.ts.md",
+      "x": 20,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_lib_auth",
+      "type": "file",
+      "file": "auth.ts.md",
+      "x": 220,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_lib_auth_client_authclient",
+      "type": "file",
+      "file": "authClient.md",
+      "x": 420,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_better_auth",
+      "type": "file",
+      "file": "better-auth.md",
+      "x": 620,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_db_index_db",
+      "type": "file",
+      "file": "db.md",
+      "x": 20,
+      "y": 940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_drizzle_orm",
+      "type": "file",
+      "file": "drizzle-orm.md",
+      "x": 220,
+      "y": 940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_db_index",
+      "type": "file",
+      "file": "index.ts.md",
+      "x": 420,
+      "y": 940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_api_auth_all_route",
+      "type": "file",
+      "file": "route.ts.md",
+      "x": 620,
+      "y": 940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_db_schema",
+      "type": "file",
+      "file": "schema.ts.md",
+      "x": 20,
+      "y": 1020,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_db_index_sql",
+      "type": "file",
+      "file": "sql.md",
+      "x": 220,
+      "y": 1020,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g5",
+      "type": "group",
+      "label": "Dev Dependencies",
+      "x": 1180,
+      "y": 700,
+      "width": 880,
+      "height": 420,
+      "color": "6"
+    },
+    {
+      "id": "n_package_devdependencies_tailwindcss_turbopack",
+      "type": "file",
+      "file": "@tailwindcssturbopack_1.md",
+      "x": 1200,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_types_node",
+      "type": "file",
+      "file": "@typesnode_1.md",
+      "x": 1400,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_types_react",
+      "type": "file",
+      "file": "@typesreact_1.md",
+      "x": 1600,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_types_react_dom",
+      "type": "file",
+      "file": "@typesreact-dom_1.md",
+      "x": 1800,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_auth",
+      "type": "file",
+      "file": "auth_2.md",
+      "x": 1200,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies",
+      "type": "file",
+      "file": "devDependencies.md",
+      "x": 1400,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_dotenv",
+      "type": "file",
+      "file": "dotenv_1.md",
+      "x": 1600,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_drizzle_kit",
+      "type": "file",
+      "file": "drizzle-kit_1.md",
+      "x": 1800,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_eslint",
+      "type": "file",
+      "file": "eslint_1.md",
+      "x": 1200,
+      "y": 940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_eslint_config_next",
+      "type": "file",
+      "file": "eslint-config-next_1.md",
+      "x": 1400,
+      "y": 940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_tailwindcss",
+      "type": "file",
+      "file": "tailwindcss_1.md",
+      "x": 1600,
+      "y": 940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_typescript",
+      "type": "file",
+      "file": "typescript_1.md",
+      "x": 1800,
+      "y": 940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g6",
+      "type": "group",
+      "label": "App Shell & Next Config",
+      "x": 2360,
+      "y": 700,
+      "width": 880,
+      "height": 420,
+      "color": "1"
+    },
+    {
+      "id": "n_src_app_page_home",
+      "type": "file",
+      "file": "Home().md",
+      "x": 2380,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_layout_rootlayout",
+      "type": "file",
+      "file": "RootLayout().md",
+      "x": 2580,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_layout_geistmono",
+      "type": "file",
+      "file": "geistMono.md",
+      "x": 2780,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_layout_geistsans",
+      "type": "file",
+      "file": "geistSans.md",
+      "x": 2980,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_layout",
+      "type": "file",
+      "file": "layout.tsx.md",
+      "x": 2380,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_layout_metadata",
+      "type": "file",
+      "file": "metadata.md",
+      "x": 2580,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_next",
+      "type": "file",
+      "file": "next.md",
+      "x": 2780,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_next_config",
+      "type": "file",
+      "file": "next.config.ts.md",
+      "x": 2980,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_next_config_nextconfig",
+      "type": "file",
+      "file": "nextConfig.md",
+      "x": 2380,
+      "y": 940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_page",
+      "type": "file",
+      "file": "page.tsx.md",
+      "x": 2580,
+      "y": 940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_globals",
+      "type": "file",
+      "file": "src_app_globals.md",
+      "x": 2780,
+      "y": 940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g7",
+      "type": "group",
+      "label": "Orders Webhook & Stock",
+      "x": 3540,
+      "y": 700,
+      "width": 880,
+      "height": 420,
+      "color": "2"
+    },
+    {
+      "id": "n_agents_webhook_idempotency_unique",
+      "type": "file",
+      "file": "Idempotency via orders.stripe_checkout_session_id UNIQUE.md",
+      "x": 3560,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_proxy_matcher_excludes_api",
+      "type": "file",
+      "file": "Keep api out of srcproxy.ts matcher.md",
+      "x": 3760,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_webhook_creates_orders",
+      "type": "file",
+      "file": "Orders created by webhook, never success page.md",
+      "x": 3960,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_stock_quantity_plus_flag",
+      "type": "file",
+      "file": "Stock as quantity plus madeToOrder flag.md",
+      "x": 4160,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_stock_decrement_oversell",
+      "type": "file",
+      "file": "Stock decrement floored at zero (accepted oversell window).md",
+      "x": 3560,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_stripe_webhook_route",
+      "type": "file",
+      "file": "Stripe webhook route srcappapistripewebhookroute.ts.md",
+      "x": 3760,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_db_batch",
+      "type": "file",
+      "file": "db.batch() instead of transactions.md",
+      "x": 3960,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_fulfillcheckoutsession",
+      "type": "file",
+      "file": "fulfillCheckoutSession in srcliborders.ts.md",
+      "x": 4160,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_order_items_snapshot",
+      "type": "file",
+      "file": "order_items purchase-time snapshot with Stripe amounts.md",
+      "x": 3560,
+      "y": 940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_stockstate",
+      "type": "file",
+      "file": "stockState() in srclibstock.ts.md",
+      "x": 3760,
+      "y": 940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g8",
+      "type": "group",
+      "label": "npm Scripts",
+      "x": 0,
+      "y": 1300,
+      "width": 880,
+      "height": 420,
+      "color": "3"
+    },
+    {
+      "id": "n_package_scripts_auth_generate",
+      "type": "file",
+      "file": "authgenerate.md",
+      "x": 20,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_build",
+      "type": "file",
+      "file": "build.md",
+      "x": 220,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_db_generate",
+      "type": "file",
+      "file": "dbgenerate.md",
+      "x": 420,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_db_migrate",
+      "type": "file",
+      "file": "dbmigrate.md",
+      "x": 620,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_db_push",
+      "type": "file",
+      "file": "dbpush.md",
+      "x": 20,
+      "y": 1460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_db_studio",
+      "type": "file",
+      "file": "dbstudio.md",
+      "x": 220,
+      "y": 1460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_dev",
+      "type": "file",
+      "file": "dev.md",
+      "x": 420,
+      "y": 1460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_lint",
+      "type": "file",
+      "file": "lint.md",
+      "x": 620,
+      "y": 1460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts",
+      "type": "file",
+      "file": "scripts.md",
+      "x": 20,
+      "y": 1540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_start",
+      "type": "file",
+      "file": "start.md",
+      "x": 220,
+      "y": 1540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g9",
+      "type": "group",
+      "label": "Runtime Dependencies",
+      "x": 1180,
+      "y": 1300,
+      "width": 660,
+      "height": 420,
+      "color": "4"
+    },
+    {
+      "id": "n_package_dependencies_neondatabase_serverless",
+      "type": "file",
+      "file": "@neondatabaseserverless_1.md",
+      "x": 1200,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_better_auth",
+      "type": "file",
+      "file": "better-auth_1.md",
+      "x": 1400,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies",
+      "type": "file",
+      "file": "dependencies.md",
+      "x": 1600,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_drizzle_orm",
+      "type": "file",
+      "file": "drizzle-orm_1.md",
+      "x": 1200,
+      "y": 1460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_next",
+      "type": "file",
+      "file": "next_1.md",
+      "x": 1400,
+      "y": 1460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_react",
+      "type": "file",
+      "file": "react_1.md",
+      "x": 1600,
+      "y": 1460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_react_dom",
+      "type": "file",
+      "file": "react-dom_1.md",
+      "x": 1200,
+      "y": 1540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g10",
+      "type": "group",
+      "label": "Next & Vercel Logos",
+      "x": 2360,
+      "y": 1300,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_public_next_next_logo",
+      "type": "file",
+      "file": "Next.js Wordmark Logo (SVG).md",
+      "x": 2380,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_public_vercel_vercel_logo",
+      "type": "file",
+      "file": "Vercel Triangle Logo (SVG).md",
+      "x": 2580,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g11",
+      "type": "group",
+      "label": "File Icon",
+      "x": 3540,
+      "y": 1300,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_public_file_file_icon",
+      "type": "file",
+      "file": "File Document Icon (SVG).md",
+      "x": 3560,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g12",
+      "type": "group",
+      "label": "Globe Icon",
+      "x": 0,
+      "y": 1800,
+      "width": 600,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_public_globe_globe_icon",
+      "type": "file",
+      "file": "Globe Icon (SVG).md",
+      "x": 20,
+      "y": 1880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g13",
+      "type": "group",
+      "label": "Window Icon",
+      "x": 1180,
+      "y": 1800,
+      "width": 600,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_public_window_window_icon",
+      "type": "file",
+      "file": "Browser Window Icon (SVG).md",
+      "x": 1200,
+      "y": 1880,
+      "width": 180,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_src_app_layout_src_app_layout_rootlayout",
+      "fromNode": "n_src_app_layout",
+      "toNode": "n_src_app_layout_rootlayout",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_page_src_app_page_home",
+      "fromNode": "n_src_app_page",
+      "toNode": "n_src_app_page_home",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_drizzle_config_ref_dotenv",
+      "fromNode": "n_drizzle_config",
+      "toNode": "n_ref_dotenv",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_drizzle_config_ref_drizzle_kit",
+      "fromNode": "n_drizzle_config",
+      "toNode": "n_ref_drizzle_kit",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_eslint_config_ref_eslint",
+      "fromNode": "n_eslint_config",
+      "toNode": "n_ref_eslint",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_eslint_config_ref_eslint_config_next",
+      "fromNode": "n_eslint_config",
+      "toNode": "n_ref_eslint_config_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_eslint_config_eslint_config_eslintconfig",
+      "fromNode": "n_eslint_config",
+      "toNode": "n_eslint_config_eslintconfig",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_neondatabase_serverless",
+      "fromNode": "n_package",
+      "toNode": "n_ref_neondatabase_serverless",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_better_auth",
+      "fromNode": "n_package",
+      "toNode": "n_ref_better_auth",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_drizzle_orm",
+      "fromNode": "n_package",
+      "toNode": "n_ref_drizzle_orm",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_next",
+      "fromNode": "n_package",
+      "toNode": "n_ref_next",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_react",
+      "fromNode": "n_package",
+      "toNode": "n_ref_react",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_react_dom",
+      "fromNode": "n_package",
+      "toNode": "n_ref_react_dom",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_tailwindcss_turbopack",
+      "fromNode": "n_package",
+      "toNode": "n_ref_tailwindcss_turbopack",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_types_node",
+      "fromNode": "n_package",
+      "toNode": "n_ref_types_node",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_types_react",
+      "fromNode": "n_package",
+      "toNode": "n_ref_types_react",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_types_react_dom",
+      "fromNode": "n_package",
+      "toNode": "n_ref_types_react_dom",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_auth",
+      "fromNode": "n_package",
+      "toNode": "n_ref_auth",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_dotenv",
+      "fromNode": "n_package",
+      "toNode": "n_ref_dotenv",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_drizzle_kit",
+      "fromNode": "n_package",
+      "toNode": "n_ref_drizzle_kit",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_eslint",
+      "fromNode": "n_package",
+      "toNode": "n_ref_eslint",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_eslint_config_next",
+      "fromNode": "n_package",
+      "toNode": "n_ref_eslint_config_next",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_tailwindcss",
+      "fromNode": "n_package",
+      "toNode": "n_ref_tailwindcss",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_typescript",
+      "fromNode": "n_package",
+      "toNode": "n_ref_typescript",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_dependencies",
+      "fromNode": "n_package",
+      "toNode": "n_package_dependencies",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_name",
+      "fromNode": "n_package",
+      "toNode": "n_package_name",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_devdependencies",
+      "fromNode": "n_package",
+      "toNode": "n_package_devdependencies",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_version",
+      "fromNode": "n_package",
+      "toNode": "n_package_version",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_private",
+      "fromNode": "n_package",
+      "toNode": "n_package_private",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_scripts",
+      "fromNode": "n_package",
+      "toNode": "n_package_scripts",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tsconfig_tsconfig_compileroptions",
+      "fromNode": "n_tsconfig",
+      "toNode": "n_tsconfig_compileroptions",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tsconfig_tsconfig_include",
+      "fromNode": "n_tsconfig",
+      "toNode": "n_tsconfig_include",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tsconfig_tsconfig_exclude",
+      "fromNode": "n_tsconfig",
+      "toNode": "n_tsconfig_exclude",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tsconfig_compileroptions_tsconfig_compileroptions_module",
+      "fromNode": "n_tsconfig_compileroptions",
+      "toNode": "n_tsconfig_compileroptions_module",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tsconfig_compileroptions_tsconfig_compileroptions_moduleresolution",
+      "fromNode": "n_tsconfig_compileroptions",
+      "toNode": "n_tsconfig_compileroptions_moduleresolution",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tsconfig_compileroptions_tsconfig_compileroptions_resolvejsonmodule",
+      "fromNode": "n_tsconfig_compileroptions",
+      "toNode": "n_tsconfig_compileroptions_resolvejsonmodule",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tsconfig_compileroptions_tsconfig_compileroptions_isolatedmodules",
+      "fromNode": "n_tsconfig_compileroptions",
+      "toNode": "n_tsconfig_compileroptions_isolatedmodules",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tsconfig_compileroptions_tsconfig_compileroptions_jsx",
+      "fromNode": "n_tsconfig_compileroptions",
+      "toNode": "n_tsconfig_compileroptions_jsx",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tsconfig_compileroptions_tsconfig_compileroptions_incremental",
+      "fromNode": "n_tsconfig_compileroptions",
+      "toNode": "n_tsconfig_compileroptions_incremental",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tsconfig_compileroptions_tsconfig_compileroptions_plugins",
+      "fromNode": "n_tsconfig_compileroptions",
+      "toNode": "n_tsconfig_compileroptions_plugins",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tsconfig_compileroptions_tsconfig_compileroptions_paths",
+      "fromNode": "n_tsconfig_compileroptions",
+      "toNode": "n_tsconfig_compileroptions_paths",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tsconfig_compileroptions_tsconfig_compileroptions_target",
+      "fromNode": "n_tsconfig_compileroptions",
+      "toNode": "n_tsconfig_compileroptions_target",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tsconfig_compileroptions_tsconfig_compileroptions_lib",
+      "fromNode": "n_tsconfig_compileroptions",
+      "toNode": "n_tsconfig_compileroptions_lib",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tsconfig_compileroptions_tsconfig_compileroptions_allowjs",
+      "fromNode": "n_tsconfig_compileroptions",
+      "toNode": "n_tsconfig_compileroptions_allowjs",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tsconfig_compileroptions_tsconfig_compileroptions_skiplibcheck",
+      "fromNode": "n_tsconfig_compileroptions",
+      "toNode": "n_tsconfig_compileroptions_skiplibcheck",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tsconfig_compileroptions_tsconfig_compileroptions_strict",
+      "fromNode": "n_tsconfig_compileroptions",
+      "toNode": "n_tsconfig_compileroptions_strict",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tsconfig_compileroptions_tsconfig_compileroptions_noemit",
+      "fromNode": "n_tsconfig_compileroptions",
+      "toNode": "n_tsconfig_compileroptions_noemit",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tsconfig_compileroptions_tsconfig_compileroptions_esmoduleinterop",
+      "fromNode": "n_tsconfig_compileroptions",
+      "toNode": "n_tsconfig_compileroptions_esmoduleinterop",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_api_auth_all_route_src_lib_auth_auth",
+      "fromNode": "n_src_app_api_auth_all_route",
+      "toNode": "n_src_lib_auth_auth",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_api_auth_all_route_ref_better_auth",
+      "fromNode": "n_src_app_api_auth_all_route",
+      "toNode": "n_ref_better_auth",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_api_auth_all_route_src_lib_auth",
+      "fromNode": "n_src_app_api_auth_all_route",
+      "toNode": "n_src_lib_auth",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_api_auth_all_route_src_app_api_auth_all_route_get",
+      "fromNode": "n_src_app_api_auth_all_route",
+      "toNode": "n_src_app_api_auth_all_route_get",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_api_auth_all_route_src_app_api_auth_all_route_post",
+      "fromNode": "n_src_app_api_auth_all_route",
+      "toNode": "n_src_app_api_auth_all_route_post",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_db_index_ref_neondatabase_serverless",
+      "fromNode": "n_src_db_index",
+      "toNode": "n_ref_neondatabase_serverless",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_db_index_ref_drizzle_orm",
+      "fromNode": "n_src_db_index",
+      "toNode": "n_ref_drizzle_orm",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_db_index_src_db_schema",
+      "fromNode": "n_src_db_index",
+      "toNode": "n_src_db_schema",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_lib_auth_src_db_index",
+      "fromNode": "n_src_lib_auth",
+      "toNode": "n_src_db_index",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_db_index_src_db_index_sql",
+      "fromNode": "n_src_db_index",
+      "toNode": "n_src_db_index_sql",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_db_index_src_db_index_db",
+      "fromNode": "n_src_db_index",
+      "toNode": "n_src_db_index_db",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_lib_auth_src_db_index_db",
+      "fromNode": "n_src_lib_auth",
+      "toNode": "n_src_db_index_db",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_lib_auth_src_db_schema",
+      "fromNode": "n_src_lib_auth",
+      "toNode": "n_src_db_schema",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_lib_auth_ref_better_auth",
+      "fromNode": "n_src_lib_auth",
+      "toNode": "n_ref_better_auth",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_lib_auth_src_lib_auth_auth",
+      "fromNode": "n_src_lib_auth",
+      "toNode": "n_src_lib_auth_auth",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_lib_auth_client_ref_better_auth",
+      "fromNode": "n_src_lib_auth_client",
+      "toNode": "n_ref_better_auth",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_lib_auth_client_src_lib_auth_client_authclient",
+      "fromNode": "n_src_lib_auth_client",
+      "toNode": "n_src_lib_auth_client_authclient",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_package_devdependencies_tailwindcss_turbopack",
+      "fromNode": "n_package_devdependencies",
+      "toNode": "n_package_devdependencies_tailwindcss_turbopack",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_package_devdependencies_types_node",
+      "fromNode": "n_package_devdependencies",
+      "toNode": "n_package_devdependencies_types_node",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_package_devdependencies_types_react",
+      "fromNode": "n_package_devdependencies",
+      "toNode": "n_package_devdependencies_types_react",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_package_devdependencies_types_react_dom",
+      "fromNode": "n_package_devdependencies",
+      "toNode": "n_package_devdependencies_types_react_dom",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_package_devdependencies_auth",
+      "fromNode": "n_package_devdependencies",
+      "toNode": "n_package_devdependencies_auth",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_package_devdependencies_dotenv",
+      "fromNode": "n_package_devdependencies",
+      "toNode": "n_package_devdependencies_dotenv",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_package_devdependencies_drizzle_kit",
+      "fromNode": "n_package_devdependencies",
+      "toNode": "n_package_devdependencies_drizzle_kit",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_package_devdependencies_eslint",
+      "fromNode": "n_package_devdependencies",
+      "toNode": "n_package_devdependencies_eslint",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_package_devdependencies_eslint_config_next",
+      "fromNode": "n_package_devdependencies",
+      "toNode": "n_package_devdependencies_eslint_config_next",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_package_devdependencies_tailwindcss",
+      "fromNode": "n_package_devdependencies",
+      "toNode": "n_package_devdependencies_tailwindcss",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_package_devdependencies_typescript",
+      "fromNode": "n_package_devdependencies",
+      "toNode": "n_package_devdependencies_typescript",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_next_config_ref_next",
+      "fromNode": "n_next_config",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_next_config_next_config_nextconfig",
+      "fromNode": "n_next_config",
+      "toNode": "n_next_config_nextconfig",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_layout_ref_next",
+      "fromNode": "n_src_app_layout",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_layout_src_app_globals",
+      "fromNode": "n_src_app_layout",
+      "toNode": "n_src_app_globals",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_layout_src_app_layout_geistmono",
+      "fromNode": "n_src_app_layout",
+      "toNode": "n_src_app_layout_geistmono",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_layout_src_app_layout_metadata",
+      "fromNode": "n_src_app_layout",
+      "toNode": "n_src_app_layout_metadata",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_layout_src_app_layout_geistsans",
+      "fromNode": "n_src_app_layout",
+      "toNode": "n_src_app_layout_geistsans",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_page_ref_next",
+      "fromNode": "n_src_app_page",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_package_scripts_package_scripts_db_generate",
+      "fromNode": "n_package_scripts",
+      "toNode": "n_package_scripts_db_generate",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_scripts_package_scripts_db_migrate",
+      "fromNode": "n_package_scripts",
+      "toNode": "n_package_scripts_db_migrate",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_scripts_package_scripts_db_push",
+      "fromNode": "n_package_scripts",
+      "toNode": "n_package_scripts_db_push",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_scripts_package_scripts_db_studio",
+      "fromNode": "n_package_scripts",
+      "toNode": "n_package_scripts_db_studio",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_scripts_package_scripts_auth_generate",
+      "fromNode": "n_package_scripts",
+      "toNode": "n_package_scripts_auth_generate",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_scripts_package_scripts_dev",
+      "fromNode": "n_package_scripts",
+      "toNode": "n_package_scripts_dev",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_scripts_package_scripts_build",
+      "fromNode": "n_package_scripts",
+      "toNode": "n_package_scripts_build",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_scripts_package_scripts_start",
+      "fromNode": "n_package_scripts",
+      "toNode": "n_package_scripts_start",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_scripts_package_scripts_lint",
+      "fromNode": "n_package_scripts",
+      "toNode": "n_package_scripts_lint",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_neondatabase_serverless",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_neondatabase_serverless",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_better_auth",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_better_auth",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_drizzle_orm",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_drizzle_orm",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_next",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_next",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_react",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_react",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_react_dom",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_react_dom",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_cart_module_agents_cart_types",
+      "fromNode": "n_agents_cart_module",
+      "toNode": "n_agents_cart_types",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_db_backed_bag_agents_cart_module",
+      "fromNode": "n_agents_db_backed_bag",
+      "toNode": "n_agents_cart_module",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_stripe_hosted_checkout_agents_cart_module",
+      "fromNode": "n_agents_stripe_hosted_checkout",
+      "toNode": "n_agents_cart_module",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_cart_module_agents_products_query_layer",
+      "fromNode": "n_agents_cart_module",
+      "toNode": "n_agents_products_query_layer",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_agents_data_layer_neon_http_agents_database_url",
+      "fromNode": "n_agents_data_layer_neon_http",
+      "toNode": "n_agents_database_url",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_env_config_agents_database_url",
+      "fromNode": "n_agents_env_config",
+      "toNode": "n_agents_database_url",
+      "label": "references [INFERRED]"
+    },
+    {
+      "id": "e_agents_agents_md_agents_env_config",
+      "fromNode": "n_agents_agents_md",
+      "toNode": "n_agents_env_config",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_env_config_agents_stripe_lazy_validation",
+      "fromNode": "n_agents_env_config",
+      "toNode": "n_agents_stripe_lazy_validation",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_better_auth_secret_agents_env_config",
+      "fromNode": "n_readme_better_auth_secret",
+      "toNode": "n_agents_env_config",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_agents_money_integer_cents_agents_mapproduct",
+      "fromNode": "n_agents_money_integer_cents",
+      "toNode": "n_agents_mapproduct",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_products_query_layer_agents_mapproduct",
+      "fromNode": "n_agents_products_query_layer",
+      "toNode": "n_agents_mapproduct",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_nextjs16_async_params_agents_nextjs_16_app_router",
+      "fromNode": "n_agents_nextjs16_async_params",
+      "toNode": "n_agents_nextjs_16_app_router",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_agents_md_agents_nextjs16_async_params",
+      "fromNode": "n_agents_agents_md",
+      "toNode": "n_agents_nextjs16_async_params",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_nextjs_16_app_router_agents_tailwind_v4",
+      "fromNode": "n_agents_nextjs_16_app_router",
+      "toNode": "n_agents_tailwind_v4",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_agents_md_agents_nextjs_16_app_router",
+      "fromNode": "n_agents_agents_md",
+      "toNode": "n_agents_nextjs_16_app_router",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_tech_stack_agents_nextjs_16_app_router",
+      "fromNode": "n_readme_tech_stack",
+      "toNode": "n_agents_nextjs_16_app_router",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_agents_products_query_layer_agents_sample_data_static_chrome",
+      "fromNode": "n_agents_products_query_layer",
+      "toNode": "n_agents_sample_data_static_chrome",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_inline_with_blocks_agents_products_query_layer",
+      "fromNode": "n_agents_inline_with_blocks",
+      "toNode": "n_agents_products_query_layer",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_agents_header_bag_count_omitted_agents_static_catalogue_routes",
+      "fromNode": "n_agents_header_bag_count_omitted",
+      "toNode": "n_agents_static_catalogue_routes",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_stripe_lazy_validation_agents_stripe_hosted_checkout",
+      "fromNode": "n_agents_stripe_lazy_validation",
+      "toNode": "n_agents_stripe_hosted_checkout",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_agents_md_agents_stripe_hosted_checkout",
+      "fromNode": "n_agents_agents_md",
+      "toNode": "n_agents_stripe_hosted_checkout",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_stripe_hosted_checkout_agents_dynamic_payment_methods",
+      "fromNode": "n_agents_stripe_hosted_checkout",
+      "toNode": "n_agents_dynamic_payment_methods",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_stripe_hosted_checkout_agents_price_data_not_price_objects",
+      "fromNode": "n_agents_stripe_hosted_checkout",
+      "toNode": "n_agents_price_data_not_price_objects",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_setup_steps_readme_better_auth_secret",
+      "fromNode": "n_readme_setup_steps",
+      "toNode": "n_readme_better_auth_secret",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_agents_md_agents_better_auth_server",
+      "fromNode": "n_agents_agents_md",
+      "toNode": "n_agents_better_auth_server",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_agents_md_agents_data_layer_neon_http",
+      "fromNode": "n_agents_agents_md",
+      "toNode": "n_agents_data_layer_neon_http",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_agents_md_agents_db_backed_bag",
+      "fromNode": "n_agents_agents_md",
+      "toNode": "n_agents_db_backed_bag",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_agents_md_agents_header_bag_count_omitted",
+      "fromNode": "n_agents_agents_md",
+      "toNode": "n_agents_header_bag_count_omitted",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_agents_md_agents_money_formatting",
+      "fromNode": "n_agents_agents_md",
+      "toNode": "n_agents_money_formatting",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_agents_md_agents_npm_scripts",
+      "fromNode": "n_agents_agents_md",
+      "toNode": "n_agents_npm_scripts",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_agents_md_agents_schema_single_file",
+      "fromNode": "n_agents_agents_md",
+      "toNode": "n_agents_schema_single_file",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_agents_md_agents_webhook_creates_orders",
+      "fromNode": "n_agents_agents_md",
+      "toNode": "n_agents_webhook_creates_orders",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_price_data_not_price_objects_agents_cart_items_no_price",
+      "fromNode": "n_agents_price_data_not_price_objects",
+      "toNode": "n_agents_cart_items_no_price",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_agents_cart_items_no_price_agents_money_integer_cents",
+      "fromNode": "n_agents_cart_items_no_price",
+      "toNode": "n_agents_money_integer_cents",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_agents_data_layer_neon_http_agents_db_batch",
+      "fromNode": "n_agents_data_layer_neon_http",
+      "toNode": "n_agents_db_batch",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_money_formatting_agents_money_integer_cents",
+      "fromNode": "n_agents_money_formatting",
+      "toNode": "n_agents_money_integer_cents",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_agents_money_integer_cents_agents_catalogue_tables",
+      "fromNode": "n_agents_money_integer_cents",
+      "toNode": "n_agents_catalogue_tables",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_public_next_next_logo_public_vercel_vercel_logo",
+      "fromNode": "n_public_next_next_logo",
+      "toNode": "n_public_vercel_vercel_logo",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_agents_auth_client_agents_auth_catchall_route",
+      "fromNode": "n_agents_auth_client",
+      "toNode": "n_agents_auth_catchall_route",
+      "label": "references [INFERRED]"
+    },
+    {
+      "id": "e_agents_auth_catchall_route_agents_better_auth_server",
+      "fromNode": "n_agents_auth_catchall_route",
+      "toNode": "n_agents_better_auth_server",
+      "label": "references [INFERRED]"
+    },
+    {
+      "id": "e_agents_better_auth_server_agents_better_auth_tables",
+      "fromNode": "n_agents_better_auth_server",
+      "toNode": "n_agents_better_auth_tables",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_schema_single_file_agents_better_auth_tables",
+      "fromNode": "n_agents_schema_single_file",
+      "toNode": "n_agents_better_auth_tables",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_auth_generate_agents_better_auth_tables",
+      "fromNode": "n_readme_auth_generate",
+      "toNode": "n_agents_better_auth_tables",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_agents_collections_strip_agents_catalogue_tables",
+      "fromNode": "n_agents_collections_strip",
+      "toNode": "n_agents_catalogue_tables",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_homepage_order_createdat_agents_catalogue_tables",
+      "fromNode": "n_agents_homepage_order_createdat",
+      "toNode": "n_agents_catalogue_tables",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_product_image_alt_per_row_agents_catalogue_tables",
+      "fromNode": "n_agents_product_image_alt_per_row",
+      "toNode": "n_agents_catalogue_tables",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_schema_single_file_agents_catalogue_tables",
+      "fromNode": "n_agents_schema_single_file",
+      "toNode": "n_agents_catalogue_tables",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_seed_script_agents_catalogue_tables",
+      "fromNode": "n_agents_seed_script",
+      "toNode": "n_agents_catalogue_tables",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_npm_scripts_agents_migrations_drizzle",
+      "fromNode": "n_agents_npm_scripts",
+      "toNode": "n_agents_migrations_drizzle",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_npm_scripts_agents_seed_script",
+      "fromNode": "n_agents_npm_scripts",
+      "toNode": "n_agents_seed_script",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_seed_script_agents_homepage_order_createdat",
+      "fromNode": "n_agents_seed_script",
+      "toNode": "n_agents_homepage_order_createdat",
+      "label": "rationale_for [INFERRED]"
+    },
+    {
+      "id": "e_readme_auth_generate_agents_schema_single_file",
+      "fromNode": "n_readme_auth_generate",
+      "toNode": "n_agents_schema_single_file",
+      "label": "conceptually_related_to [AMBIGUOUS]"
+    },
+    {
+      "id": "e_readme_setup_steps_readme_auth_generate",
+      "fromNode": "n_readme_setup_steps",
+      "toNode": "n_readme_auth_generate",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_layout_readme_drizzle_config",
+      "fromNode": "n_readme_layout",
+      "toNode": "n_readme_drizzle_config",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_drizzle_config_agents_schema_single_file",
+      "fromNode": "n_readme_drizzle_config",
+      "toNode": "n_agents_schema_single_file",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_readme_fucci_store_readme_layout",
+      "fromNode": "n_readme_fucci_store",
+      "toNode": "n_readme_layout",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_fucci_store_readme_setup_steps",
+      "fromNode": "n_readme_fucci_store",
+      "toNode": "n_readme_setup_steps",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_setup_steps_agents_migrations_drizzle",
+      "fromNode": "n_readme_setup_steps",
+      "toNode": "n_agents_migrations_drizzle",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_readme_fucci_store_readme_tech_stack",
+      "fromNode": "n_readme_fucci_store",
+      "toNode": "n_readme_tech_stack",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_migrations_drizzle_agents_schema_single_file",
+      "fromNode": "n_agents_migrations_drizzle",
+      "toNode": "n_agents_schema_single_file",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_schema_single_file_agents_slug_public_identifier",
+      "fromNode": "n_agents_schema_single_file",
+      "toNode": "n_agents_slug_public_identifier",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_stripe_webhook_route_agents_fulfillcheckoutsession",
+      "fromNode": "n_agents_stripe_webhook_route",
+      "toNode": "n_agents_fulfillcheckoutsession",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_fulfillcheckoutsession_agents_order_items_snapshot",
+      "fromNode": "n_agents_fulfillcheckoutsession",
+      "toNode": "n_agents_order_items_snapshot",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_fulfillcheckoutsession_agents_stock_decrement_oversell",
+      "fromNode": "n_agents_fulfillcheckoutsession",
+      "toNode": "n_agents_stock_decrement_oversell",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_fulfillcheckoutsession_agents_webhook_idempotency_unique",
+      "fromNode": "n_agents_fulfillcheckoutsession",
+      "toNode": "n_agents_webhook_idempotency_unique",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_stock_quantity_plus_flag_agents_stockstate",
+      "fromNode": "n_agents_stock_quantity_plus_flag",
+      "toNode": "n_agents_stockstate",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_proxy_matcher_excludes_api_agents_stripe_webhook_route",
+      "fromNode": "n_agents_proxy_matcher_excludes_api",
+      "toNode": "n_agents_stripe_webhook_route",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_webhook_creates_orders_agents_stripe_webhook_route",
+      "fromNode": "n_agents_webhook_creates_orders",
+      "toNode": "n_agents_stripe_webhook_route",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_stock_decrement_oversell_agents_db_batch",
+      "fromNode": "n_agents_stock_decrement_oversell",
+      "toNode": "n_agents_db_batch",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_stock_decrement_oversell_agents_stock_quantity_plus_flag",
+      "fromNode": "n_agents_stock_decrement_oversell",
+      "toNode": "n_agents_stock_quantity_plus_flag",
+      "label": "conceptually_related_to [INFERRED]"
+    }
+  ]
+}
